@@ -9,6 +9,7 @@ int main(void)
 {
 	FILE *fp;
 
+	// correct text file name
 	fp = fopen("weight_log_file.txt", "a");
 
 	float weight;

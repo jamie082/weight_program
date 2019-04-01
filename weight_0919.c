@@ -1,9 +1,6 @@
-// use weight_log.txt as output file
-// Uses normal weight_log.txt file name
 // weight_logger.c
-// added new comments
+
 #include <stdio.h>
-// #include <string.h>
 
 void my_function(void);
 
@@ -11,12 +8,8 @@ int main(void)
 {
 	FILE *fp;
 
-<<<<<<< HEAD
 	// correct text file name
 	fp = fopen("weight_log_file.txt", "a");
-=======
-	fp = fopen("weight_log.txt", "a");
->>>>>>> iss53
 
 	float weight;
 	int month, day, year;

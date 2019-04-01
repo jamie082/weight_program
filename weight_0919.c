@@ -2,6 +2,7 @@
 // weight_logger.c
 // added new comments
 #include <stdio.h>
+// #include <string.h>
 
 void my_function(void);
 

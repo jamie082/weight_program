@@ -4,7 +4,7 @@
 
 void my_function(void);
 
-// int main(void)
+int main(void)
 {
 	FILE *fp;
 

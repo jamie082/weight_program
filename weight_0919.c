@@ -8,7 +8,7 @@ int main(void)
 {
 	FILE *fp;
 
-	fp = fopen("weight_log.txt", "a");
+	fp = fopen("weight_log_file.txt", "a");
 
 	float weight;
 	int month, day, year;

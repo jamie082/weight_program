@@ -1,3 +1,4 @@
+// Uses normal weight_log.txt file name
 // weight_logger.c
 // added new comments
 #include <stdio.h>

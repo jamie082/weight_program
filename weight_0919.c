@@ -16,8 +16,20 @@ int main(void)
 	int month, day, year;
 
 	printf("Weight Management v0.5\n");
-	printf("Enter weight: ");
-	scanf("%f", &weight);
+	
+	// if weight is a negative number or is not a digit
+
+	do
+	{
+		printf("Enter weight: ");
+		scanf("%f", &weight);
+
+		if(weight < 0)
+		{
+			printf("Error! Negative number\n");
+		}
+
+	} while (weight < 0);
 
 	printf("Enter date: ");
 	scanf("%d/%d/%d", &month, &day, &year);

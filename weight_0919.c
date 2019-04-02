@@ -1,6 +1,7 @@
 // weight_logger.c
 
 #include <stdio.h>
+#include <ctype.h>
 
 void my_function(void);
 
@@ -28,7 +29,6 @@ int main(void)
 		{
 			printf("Error! Negative number\n");
 		}
-
 	} while (weight < 0);
 
 	printf("Enter date: ");

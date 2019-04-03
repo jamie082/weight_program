@@ -13,6 +13,7 @@ int main(void)
 
 	fp = fopen(filename, "a");
 
+<<<<<<< HEAD
 	if((fp = fopen(filename, "a")) == NULL)
 	{
 		fprintf(stderr, "Error opening file.");
@@ -54,6 +55,14 @@ int main(void)
 
 		printf("(%d lbs)\n", a);
 	} while (x != 1);
+=======
+	char weight[10];
+	int month, day, year;
+
+	printf("Weight Management v0.5\n");
+	printf("Enter weight: ");
+	scanf("%s", weight);
+>>>>>>> f7da34f58b99be02f196d8afe0270367bddb9643
 
 	printf("Enter date: ");
 	scanf("%d/%d/%d", &month, &day, &year);
@@ -61,9 +70,13 @@ int main(void)
 	printf("(%d/%d/%d)\n", month, day, year);
 
 	fseek(fp, 1, SEEK_END);
+<<<<<<< HEAD
 	fprintf(fp, "%d/%d/%d\t\t%d\n", month, day, year, a);
 
 	printf("Successfully wrote to file %s\n", filename);
+=======
+	fprintf(fp, "%d/%d/%d\t\t%s\n", month, day, year, weight);
+>>>>>>> f7da34f58b99be02f196d8afe0270367bddb9643
 
 	fclose(fp);
 

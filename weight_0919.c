@@ -19,6 +19,11 @@ int main(void)
 		exit(1);
 	}
 
+	else
+	{
+		fprintf(stdout, "Successfully opened %s\n", filename);
+	}
+
 	char input[15];
 	int month, day, year;
 
@@ -64,7 +69,16 @@ int main(void)
 
 	fprintf(fp, "%d/%d/%d\t\t%d\n", month, day, year, a);
 
-	printf("Successfully wrote to file %s\n", filename);
+	if(fp == NULL)
+	{	
+		fprintf(stderr, "Error opening file");
+	}
+
+	else
+	{
+		printf("Successfully wrote to file %s\n", filename);
+
+	}
 
 	fclose(fp);
 

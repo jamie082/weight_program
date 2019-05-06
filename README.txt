@@ -1,3 +1,4 @@
+switched to Debian linux
 this is weight program readme file
 
 
